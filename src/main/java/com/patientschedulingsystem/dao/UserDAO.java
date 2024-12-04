@@ -22,14 +22,16 @@ public class UserDAO {
 
 				return true;
 
+			}else {
+				return false;
 			}
 		} catch (Exception e) {
 			
 			System.out.println("Database Connection :" + e);
-			
+			return false;
 		}
 
-		return false;
+		
 
 	}
 }

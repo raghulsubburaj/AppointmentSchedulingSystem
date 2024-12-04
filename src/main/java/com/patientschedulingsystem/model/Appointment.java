@@ -1,13 +1,15 @@
 package com.patientschedulingsystem.model;
 
-import java.security.Timestamp;
+
+import java.time.LocalTime;
+
 
 public class Appointment {
 
 	private long appointmentId;
 	private User user;
 	private Doctor doctor;
-	private Timestamp appointmentTime;
+	private LocalTime appointmentTime;
 	private String status;
 
 	public long getAppointmentId() {
@@ -34,12 +36,12 @@ public class Appointment {
 		this.doctor = doctor;
 	}
 
-	public Timestamp getAppointmentTime() {
+	public LocalTime getAppointmentTime() {
 		return appointmentTime;
 	}
 
-	public void setAppointmentTime(Timestamp appointmentTime) {
-		this.appointmentTime = appointmentTime;
+	public void setAppointmentTime(LocalTime localTime) {
+		this.appointmentTime = localTime;
 	}
 
 	public String getStatus() {

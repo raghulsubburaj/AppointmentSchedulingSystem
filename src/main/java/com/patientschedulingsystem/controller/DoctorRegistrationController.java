@@ -24,11 +24,11 @@ public class DoctorRegistrationController {
 
 		try {
 
-			if (doctor.getSpecialization() == null || doctor.getUser().getUserId() == null) {
+			if (doctor.getSpecialization() == null || doctor.getUser().getUserId() == 0) {
 
 				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Enter The All Value");
 
-			} else if (doctor.getUser().getUserId() != null) {
+			} else if (doctor.getUser().getUserId() != 0) {
 
 				String role = doctorRegistrationDAO.roleCheck(doctor.getUser().getUserId());
 

@@ -2,16 +2,16 @@ package com.patientschedulingsystem.model;
 
 public class User {
 
-	private Long userId;
+	private long userId;
 	private String email;
 	private String password;
 	private String role;
 
-	public Long getUserId() {
+	public long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(Long userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 
